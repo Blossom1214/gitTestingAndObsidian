@@ -40,13 +40,7 @@ void Timer::Update_Timer()
 
 Timer* Timer::Create()
 {
-	Timer* pTimer = new Timer;
-	if(FAILED(pTimer->Ready_Timer()))
-	{
-		Engine::Safe_Release(pTimer);
-		pTimer = nullptr;
-	}
-	return pTimer;
+
 }
 
 void Timer::Free()
