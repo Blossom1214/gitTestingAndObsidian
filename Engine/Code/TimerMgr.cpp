@@ -13,7 +13,7 @@ TimerMgr::~TimerMgr()
 
 _float TimerMgr::Get_TimeDelta(const _tchar* pTimerTag)
 {
-
+.//
 }
 
 void TimerMgr::Set_TimeDelta(const _tchar* pTimerTag)
