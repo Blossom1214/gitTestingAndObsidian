@@ -42,6 +42,9 @@
     <ClInclude Include="..\Header\Timer.h">
       <Filter>00.Manager\02.TimerMgr\01.Timer</Filter>
     </ClInclude>
+    <ClInclude Include="..\Header\TimerMgr.h">
+      <Filter>00.Manager\02.TimerMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\GraphicDev.cpp">
@@ -49,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="..\Code\Timer.cpp">
       <Filter>00.Manager\02.TimerMgr\01.Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\TimerMgr.cpp">
+      <Filter>00.Manager\02.TimerMgr</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

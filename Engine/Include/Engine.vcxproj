@@ -149,10 +149,12 @@
     <ClInclude Include="..\Header\Engine_Typedef.h" />
     <ClInclude Include="..\Header\GraphicDev.h" />
     <ClInclude Include="..\Header\Timer.h" />
+    <ClInclude Include="..\Header\TimerMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\GraphicDev.cpp" />
     <ClCompile Include="..\Code\Timer.cpp" />
+    <ClCompile Include="..\Code\TimerMgr.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
