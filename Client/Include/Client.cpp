@@ -5,6 +5,7 @@
 #include "framework.h"
 #include "Client.h"
 #include "MainApp.h"
+#include "TimerMgr.h"
 #define MAX_LOADSTRING 100
 
 // 전역 변수:
@@ -47,6 +48,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     MainApp* pMainApp = MainApp::Create();
 	if (nullptr == pMainApp)
 		return FALSE;
+	if (FAILED(TimerMgr::GetInstance()->Ready_Timer(L"Timer_Immediate")))
+		return E_FAIL;
+
+	if (FAILED(TimerMgr::GetInstance()->Ready_Timer(L"Timer_60")))
+		return E_FAIL;
     while (true)
     {
         
@@ -74,7 +80,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         MSG_BOX("MainApp Release Failed");
         return FALSE;
     }
-
+    TimerMgr::GetInstance()->DestroyInstance();
     return (int) msg.wParam;
 }
 
