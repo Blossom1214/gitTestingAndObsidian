@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="00.MainApp">
+      <UniqueIdentifier>{72d50a78-c7e5-437a-8ca8-61c20a0967a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Header">
+      <UniqueIdentifier>{42e56651-00af-43e4-b9fd-e2b2801609c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Pch">
+      <UniqueIdentifier>{6cd3d109-3273-45a9-943d-aa27c700926c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="000.Client">
+      <UniqueIdentifier>{25550024-cbc2-42e3-a2d2-a2424c2183a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>99.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>99.Header</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>01.Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>000.Client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\MainApp.h">
+      <Filter>00.MainApp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>01.Pch</Filter>
+    </ClCompile>
+    <ClCompile Include="Client.cpp">
+      <Filter>000.Client</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\MainApp.cpp">
+      <Filter>00.MainApp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="Client.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
