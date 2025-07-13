@@ -13,11 +13,7 @@ TimerMgr::~TimerMgr()
 
 _float TimerMgr::Get_TimeDelta(const _tchar* pTimerTag)
 {
-<<<<<<< HEAD
-.//
-=======
-//ÀÛ¼ºÁß
->>>>>>> parent of b59403b (Merge)
+
 }
 
 void TimerMgr::Set_TimeDelta(const _tchar* pTimerTag)
