@@ -6,6 +6,7 @@
 #include "Client.h"
 #include "MainApp.h"
 #include "TimerMgr.h"
+#include "FrameMgr.h"
 #define MAX_LOADSTRING 100
 
 // 전역 변수:
@@ -53,6 +54,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	if (FAILED(TimerMgr::GetInstance()->Ready_Timer(L"Timer_60")))
 		return E_FAIL;
+
+	if (FAILED(FrameMgr::GetInstance()->Ready_Frame(L"Frame60", 60.f)))
+		return E_FAIL;
     while (true)
     {
         
@@ -68,9 +72,19 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		}
         else
         {
-            pMainApp->Update_MainApp(0.f);
-            pMainApp->LateUpdate_MainApp(0.f);
-            pMainApp->Render_MainApp();
+            TimerMgr::GetInstance()->Set_TimeDelta(L"Timer_Immediate");
+			_float fTimer_Immediate = TimerMgr::GetInstance()->Get_TimeDelta(L"Timer_Immediate");
+
+			if (FrameMgr::GetInstance()->Ispermit_Call(L"Frame60", fTimer_Immediate))
+			{
+				TimerMgr::GetInstance()->Set_TimeDelta(L"Timer_60");
+				_float fTimer_60 = TimerMgr::GetInstance()->Get_TimeDelta(L"Timer_60");
+
+				pMainApp->Update_MainApp(fTimer_60);
+				pMainApp->LateUpdate_MainApp(fTimer_60);
+				pMainApp->Render_MainApp();
+			}
+
         }
 
     }
@@ -81,6 +95,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         return FALSE;
     }
     TimerMgr::GetInstance()->DestroyInstance();
+    FrameMgr::GetInstance()->DestroyInstance();
     return (int) msg.wParam;
 }
 
