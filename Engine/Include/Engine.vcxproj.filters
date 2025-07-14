@@ -16,6 +16,12 @@
     <Filter Include="00.Manager\02.TimerMgr\01.Timer">
       <UniqueIdentifier>{ba15f53e-32f2-4261-9c74-28575379ade8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="00.Manager\03.FrameMgr">
+      <UniqueIdentifier>{0df80955-e420-4d6d-9ea0-f2bac63eedd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Manager\03.FrameMgr\01Frame">
+      <UniqueIdentifier>{c541160b-a837-4575-9154-68cc14b657db}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Header\Engine_Define.h">
@@ -45,6 +51,12 @@
     <ClInclude Include="..\Header\TimerMgr.h">
       <Filter>00.Manager\02.TimerMgr</Filter>
     </ClInclude>
+    <ClInclude Include="..\Header\Frame.h">
+      <Filter>00.Manager\03.FrameMgr\01Frame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\FrameMgr.h">
+      <Filter>00.Manager\03.FrameMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\GraphicDev.cpp">
@@ -55,6 +67,12 @@
     </ClCompile>
     <ClCompile Include="..\Code\TimerMgr.cpp">
       <Filter>00.Manager\02.TimerMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Frame.cpp">
+      <Filter>00.Manager\03.FrameMgr\01Frame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\FrameMgr.cpp">
+      <Filter>00.Manager\03.FrameMgr</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
