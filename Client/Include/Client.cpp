@@ -94,8 +94,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         MSG_BOX("MainApp Release Failed");
         return FALSE;
     }
-    TimerMgr::GetInstance()->DestroyInstance();
-    FrameMgr::GetInstance()->DestroyInstance();
+
     return (int) msg.wParam;
 }
 

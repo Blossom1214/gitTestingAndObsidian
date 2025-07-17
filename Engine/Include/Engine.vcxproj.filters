@@ -22,6 +22,21 @@
     <Filter Include="00.Manager\03.FrameMgr\01Frame">
       <UniqueIdentifier>{c541160b-a837-4575-9154-68cc14b657db}</UniqueIdentifier>
     </Filter>
+    <Filter Include="00.Manager\04.Management">
+      <UniqueIdentifier>{62ad449f-66de-4c67-9ba2-c599b7fa3336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Manager\04.Management\01.Scene">
+      <UniqueIdentifier>{08a0634b-5f90-4c84-bbbc-9eafdb2ea36f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Manager\04.Management\02.Layer">
+      <UniqueIdentifier>{39bb56a5-3419-4f3c-9f44-00d79a3a308f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Manager\04.Management\03.GameObject">
+      <UniqueIdentifier>{beca4a69-3e35-4944-9796-d5d318df7376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Manager\04.Management\04.Component">
+      <UniqueIdentifier>{0def839a-5d13-4e1f-b0f1-358c901208e9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Header\Engine_Define.h">
@@ -57,6 +72,21 @@
     <ClInclude Include="..\Header\FrameMgr.h">
       <Filter>00.Manager\03.FrameMgr</Filter>
     </ClInclude>
+    <ClInclude Include="..\Header\Management.h">
+      <Filter>00.Manager\04.Management</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Scene.h">
+      <Filter>00.Manager\04.Management\01.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Layer.h">
+      <Filter>00.Manager\04.Management\02.Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\GameObject.h">
+      <Filter>00.Manager\04.Management\03.GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\Component.h">
+      <Filter>00.Manager\04.Management\04.Component</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\GraphicDev.cpp">
@@ -73,6 +103,21 @@
     </ClCompile>
     <ClCompile Include="..\Code\FrameMgr.cpp">
       <Filter>00.Manager\03.FrameMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Management.cpp">
+      <Filter>00.Manager\04.Management</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Scene.cpp">
+      <Filter>00.Manager\04.Management\01.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Layer.cpp">
+      <Filter>00.Manager\04.Management\02.Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\GameObject.cpp">
+      <Filter>00.Manager\04.Management\03.GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Component.cpp">
+      <Filter>00.Manager\04.Management\04.Component</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

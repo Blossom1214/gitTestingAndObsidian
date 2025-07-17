@@ -9,6 +9,8 @@ private:
 	explicit GraphicDev();
 	virtual ~GraphicDev();
 public:
+	LPDIRECT3DDEVICE9		Get_GraphicDev() { return m_pGraphicDev; }
+public:
 	HRESULT Ready_GraphicDev(HWND hWnd,const _uint& iSizeX,const _uint& iSizeY,WINMODE mode,GraphicDev** ppGraphicDev);
 	void Render_End();
 	void Render_Begin(D3DXCOLOR Color);

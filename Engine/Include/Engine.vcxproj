@@ -122,6 +122,9 @@
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>call "$(SolutionDir)Copy.bat"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -139,8 +142,13 @@
       <EnableUAC>false</EnableUAC>
       <AdditionalDependencies>d3d9.lib;d3dx9.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>call "$(SolutionDir)Copy.bat"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\Header\Component.h" />
+    <ClInclude Include="..\Header\GameObject.h" />
     <ClInclude Include="..\Header\Engine_Define.h" />
     <ClInclude Include="..\Header\Engine_Enum.h" />
     <ClInclude Include="..\Header\Engine_Function.h" />
@@ -150,13 +158,21 @@
     <ClInclude Include="..\Header\Frame.h" />
     <ClInclude Include="..\Header\FrameMgr.h" />
     <ClInclude Include="..\Header\GraphicDev.h" />
+    <ClInclude Include="..\Header\Layer.h" />
+    <ClInclude Include="..\Header\Management.h" />
+    <ClInclude Include="..\Header\Scene.h" />
     <ClInclude Include="..\Header\Timer.h" />
     <ClInclude Include="..\Header\TimerMgr.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Code\Component.cpp" />
+    <ClCompile Include="..\Code\GameObject.cpp" />
     <ClCompile Include="..\Code\Frame.cpp" />
     <ClCompile Include="..\Code\FrameMgr.cpp" />
     <ClCompile Include="..\Code\GraphicDev.cpp" />
+    <ClCompile Include="..\Code\Layer.cpp" />
+    <ClCompile Include="..\Code\Management.cpp" />
+    <ClCompile Include="..\Code\Scene.cpp" />
     <ClCompile Include="..\Code\Timer.cpp" />
     <ClCompile Include="..\Code\TimerMgr.cpp" />
   </ItemGroup>
