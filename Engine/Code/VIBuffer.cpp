@@ -33,11 +33,13 @@ HRESULT VIBuffer::Ready_Buffer()
 		nullptr)))
 		return E_FAIL;
 
-
+	
 	return S_OK;
 }
 
 void VIBuffer::Render_Buffer()
 {
-
+	m_GraphicDev->SetStreamSource(0, m_pVB, 0, m_dwVtxSize);
+	m_GraphicDev->SetFVF(m_dwFVF);
+	m_GraphicDev->DrawPrimitive(D3DPT_TRIANGLELIST, 0, m_dwTriCnt);
 }
