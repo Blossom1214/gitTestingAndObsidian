@@ -37,6 +37,12 @@
     <Filter Include="00.Manager\04.Management\04.Component">
       <UniqueIdentifier>{0def839a-5d13-4e1f-b0f1-358c901208e9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="00.Manager\04.Management\04.Component\00.VIBuffer">
+      <UniqueIdentifier>{7f56de9c-1658-457e-9529-8c7e10790d58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Manager\04.Management\04.Component\00.VIBuffer\00.TriCol">
+      <UniqueIdentifier>{5c97b7c3-ee36-4d60-a376-5078e1cade78}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Header\Engine_Define.h">
@@ -87,6 +93,12 @@
     <ClInclude Include="..\Header\Component.h">
       <Filter>00.Manager\04.Management\04.Component</Filter>
     </ClInclude>
+    <ClInclude Include="..\Header\VIBuffer.h">
+      <Filter>00.Manager\04.Management\04.Component\00.VIBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Header\TriCol.h">
+      <Filter>00.Manager\04.Management\04.Component\00.VIBuffer\00.TriCol</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\GraphicDev.cpp">
@@ -118,6 +130,12 @@
     </ClCompile>
     <ClCompile Include="..\Code\Component.cpp">
       <Filter>00.Manager\04.Management\04.Component</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\VIBuffer.cpp">
+      <Filter>00.Manager\04.Management\04.Component\00.VIBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\TriCol.cpp">
+      <Filter>00.Manager\04.Management\04.Component\00.VIBuffer\00.TriCol</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

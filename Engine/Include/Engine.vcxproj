@@ -163,6 +163,8 @@
     <ClInclude Include="..\Header\Scene.h" />
     <ClInclude Include="..\Header\Timer.h" />
     <ClInclude Include="..\Header\TimerMgr.h" />
+    <ClInclude Include="..\Header\TriCol.h" />
+    <ClInclude Include="..\Header\VIBuffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\Component.cpp" />
@@ -175,6 +177,8 @@
     <ClCompile Include="..\Code\Scene.cpp" />
     <ClCompile Include="..\Code\Timer.cpp" />
     <ClCompile Include="..\Code\TimerMgr.cpp" />
+    <ClCompile Include="..\Code\TriCol.cpp" />
+    <ClCompile Include="..\Code\VIBuffer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
